@@ -1,6 +1,6 @@
 node {
     stage("Clone"){
-        git 'git@github.com:roachmaster/raspberry-pi-64-alpine-jdk11.git'
+        git branch: 'main', url:'git@github.com:roachmaster/raspberry-pi-64-alpine-jdk11.git'
     }
 
     stage("Docker Build"){
